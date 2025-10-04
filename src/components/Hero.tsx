@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
@@ -6,7 +6,9 @@ export default function Hero() {
         <main id="hero" className="relative min-h-screen flex flex-col items-center w-full overflow-x-hidden  scroll-smooth">
             <section className="h-screen w-full flex flex-col justify-center items-center text-white text-center px-4">
                 <h1 className="text-5xl md:text-7xl font-bold text-gray-900">John Lee</h1>
-                {/* <HeroSlogan badText="Computational Creativity" goodText="Creative Computation"></HeroSlogan> */}                <HeroSlogan badText="Hello " goodText="there"></HeroSlogan>
+                {/* <HeroSlogan badText="Computational Creativity" goodText="Creative Computation"></HeroSlogan> */}
+
+                {/* <HeroSlogan badText="Hello " goodText="there"></HeroSlogan> */}
 
                 <p className="mt-2 py-4 text-md md:text-lg max-w-md text-gray-700">
                     Aspiring developer and artist.
@@ -60,46 +62,46 @@ export default function Hero() {
 //     );
 // }
 
-type HeroSlogan = {
-    badText: string;
-    goodText: string;
-};
+// type HeroSlogan = {
+//     badText: string;
+//     goodText: string;
+// };
 
-function HeroSlogan({ badText, goodText }: HeroSlogan) {
-    return (
-        <div className="flex items-center justify-center space-x-4">
-            <div className="relative inline-block">
+// function HeroSlogan({ badText, goodText }: HeroSlogan) {
+//     return (
+//         <div className="flex items-center justify-center space-x-4">
+//             <div className="relative inline-block">
 
-                <motion.h1
-                    className="text-lg text-black"
-                    initial={{ opacity: 1, y: 0 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }} viewport={{ once: true }}
+//                 <motion.h1
+//                     className="text-lg text-black"
+//                     initial={{ opacity: 1, y: 0 }}
+//                     whileInView={{ opacity: 1, y: 0 }}
+//                     transition={{ duration: 0.6 }} viewport={{ once: true }}
 
-                >
-                    <h1 className="text-5xl md:text-5xl font-bold text-green-300">{badText}</h1>
-                </motion.h1>
+//                 >
+//                     <h1 className="text-5xl md:text-5xl font-bold text-green-300">{badText}</h1>
+//                 </motion.h1>
 
-                <motion.div
-                    className="absolute left-0 top-1/2 h-[2px] bg-red-500 rounded"
-                    initial={{ width: 0, x: -5, y: 6 }}
-                    animate={{ width: "107%" }}
-                    transition={{ delay: 0.5, duration: 1 }} viewport={{ once: true }}
+//                 <motion.div
+//                     className="absolute left-0 top-1/2 h-[2px] bg-red-500 rounded"
+//                     initial={{ width: 0, x: -5, y: 6 }}
+//                     animate={{ width: "107%" }}
+//                     transition={{ delay: 0.5, duration: 1 }} viewport={{ once: true }}
 
-                />
-            </div>
+//                 />
+//             </div>
 
-            <motion.h1
-                className="text-lg text-black"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 1.9 }} viewport={{ once: true }}
+//             <motion.h1
+//                 className="text-lg text-black"
+//                 initial={{ opacity: 0, x: 20 }}
+//                 whileInView={{ opacity: 1, x: 0 }}
+//                 transition={{ duration: 1, delay: 1.9 }} viewport={{ once: true }}
 
-            >
-                <h1 className="text-5xl md:text-5xl font-bold text-green-300">{goodText}</h1>
-            </motion.h1>
-        </div>
-    );
+//             >
+//                 <h1 className="text-5xl md:text-5xl font-bold text-green-300">{goodText}</h1>
+//             </motion.h1>
+//         </div>
+//     );
 
-}
+// }
 

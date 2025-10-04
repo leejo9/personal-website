@@ -8,10 +8,10 @@ export default function Research() {
 
         >
             <Section title="Research">
-                <div>
+                {/* <div>
                     My main research interests are in computer vision, ML, algorithms, and possibly graphics. My current vision interests lie in primarily 4 domains: vision models for generative tasks and scene understanding, vision in healthcare, tools to assist artists, and the intersection of vision, algorithms, and graphics for procedural generation tasks and virtual environments.
 
-                </div>
+                </div> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     <div className="mt-6">I am grateful for the mentorship I have recieved from my professors and mentors.</div>
                     <Card title="Right Triangles on a Grid">
