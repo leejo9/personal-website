@@ -36,26 +36,6 @@ export default function About() {
 }
 
 
-type CardProps = {
-    title: string;
-    children: React.ReactNode;
-};
-
-function Card({ title, children }: CardProps) {
-    return (
-        <motion.div
-            className="p-6 rounded-2xl bg-gray-900 text-white shadow-lg hover:scale-[1.02] transition"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-        >
-            <h3 className="text-xl font-semibold">{title}</h3>
-            <p className="mt-2 text-sm text-gray-300">{children}</p>
-        </motion.div>
-    );
-}
-
 
 type SectionProps = {
     title: string;

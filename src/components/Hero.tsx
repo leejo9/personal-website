@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { img } from "framer-motion/client";
 
 export default function Hero() {
     return (
@@ -18,67 +17,48 @@ export default function Hero() {
     );
 }
 
-import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
+// import { useEffect, useState } from "react";
+// import { AnimatePresence } from "framer-motion";
 
 
-function AnimateFlareWrapper({ img_path }: { img_path: string }) {
-    const [show, setShow] = useState(true);
+// function AnimateFlareWrapper({ img_path }: { img_path: string }) {
+//     const [show, setShow] = useState(true);
 
-    useEffect(() => {
-        const timeout = setTimeout(() => setShow(false), 5000);
-        return () => clearTimeout(timeout);
-    }, []);
+//     useEffect(() => {
+//         const timeout = setTimeout(() => setShow(false), 5000);
+//         return () => clearTimeout(timeout);
+//     }, []);
 
-    return (
-        <AnimatePresence>
-            {show && <AnimateLensFlare img_path={img_path} />}
-        </AnimatePresence>
-    );
-}
+//     return (
+//         <AnimatePresence>
+//             {show && <AnimateLensFlare img_path={img_path} />}
+//         </AnimatePresence>
+//     );
+// }
 
-type AnimateLensFlare = {
-    img_path: string;
-}
-function AnimateLensFlare({ img_path }: AnimateLensFlare) {
-    return (
-        <motion.div
-            className="absolute w-full h-full pointer-events-none z-0"
-            initial={{ x: "-40%", y: "-20%", opacity: 0.2 }}
-            animate={{ x: "60%", y: "-10%", opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{
-                duration: 5,
-                ease: "easeInOut",
-            }}
-        >
-            <img
-                src={img_path}
-                alt="Lens flare"
-                className="animate-pulse w-full h-full object-contain"
-            />
-        </motion.div>
-    );
-}
-
-type Transition1 = {
-    text: string;
-};
-
-function Transition1({ text }: Transition1) {
-    return (
-        <motion.div
-            className="pr-6 pl-6 rounded-2xl text-white shadow-lg bg-opacity-0 bg-gray-200 hover:scale-[1.02] transition"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.6 }}
-        >
-            <p className="mt-2 text-sm text-black">{text}</p>
-
-        </motion.div>
-    );
-}
+// type AnimateLensFlare = {
+//     img_path: string;
+// }
+// function AnimateLensFlare({ img_path }: AnimateLensFlare) {
+//     return (
+//         <motion.div
+//             className="absolute w-full h-full pointer-events-none z-0"
+//             initial={{ x: "-40%", y: "-20%", opacity: 0.2 }}
+//             animate={{ x: "60%", y: "-10%", opacity: 1 }}
+//             exit={{ opacity: 0 }}
+//             transition={{
+//                 duration: 5,
+//                 ease: "easeInOut",
+//             }}
+//         >
+//             <img
+//                 src={img_path}
+//                 alt="Lens flare"
+//                 className="animate-pulse w-full h-full object-contain"
+//             />
+//         </motion.div>
+//     );
+// }
 
 type HeroSlogan = {
     badText: string;
