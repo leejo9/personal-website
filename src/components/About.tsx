@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <section
-            id="about"
+            id="#about"
             className="w-full px-6 flex justify-center overflow-hidden scroll-smooth"
         >
             <Section title="About Me">
