@@ -76,7 +76,7 @@ export default function CreativePage() {
                     ease: "easeOut",
                 }}
             />
-
+    
 
 
             <section className="flex flex-col items-center justify-center text-center py-20 md:py-32 z-20">

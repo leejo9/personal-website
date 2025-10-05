@@ -15,5 +15,7 @@ export default function MainPage() {
             <Creative />
             <Footer />
         </main>
+
+
     );
 }
