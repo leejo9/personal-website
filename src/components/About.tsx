@@ -14,7 +14,7 @@ export default function About() {
                         I’m currently researching <span className="text-green-700"> computer vision </span>
                         and its applications in visual mediums. I am interested in both applied and foundational research, as well as software engineering roles. I hope to put my creativity to good use :). I also hope to eventually branch into developing immersive worlds (
                         <span className="relative group underline text-green-700 cursor-help">
-                            game dev
+                            game development
                             <span className="hidden group-hover:inline-block absolute left-0 bottom-full mt-2 text-sm px-3 py-1 rounded z-10 whitespace-normal bg-transparent bg-opacity-0">
                                 <Transition1 text="itch.io link" />
                             </span>
