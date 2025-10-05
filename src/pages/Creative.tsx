@@ -35,7 +35,7 @@ export default function CreativePage() {
                 </div>
             </nav>
             <motion.img
-                src="../public/assets/cloud1.png"
+                src="/assets/cloud1.png"
                 alt="A floating cloud"
                 className="absolute top-[10%] left-[-10%] w-1/2 md:w-1/3 opacity-70 z-0 pointer-events-none"
                 animate={{
@@ -49,7 +49,7 @@ export default function CreativePage() {
                 }}
             />
             <motion.img
-                src="../public/assets/cloud1.png"
+                src="/assets/cloud1.png"
                 alt="A floating cloud"
                 className="absolute top-[10%] left-[-10%] w-1/3 md:w-1/4 opacity-60 z-0 pointer-events-none"
                 animate={{
@@ -63,7 +63,7 @@ export default function CreativePage() {
                 }}
             />
             <motion.img
-                src="../public/assets/cloud2.png"
+                src="/assets/cloud2.png"
                 alt="Another floating cloud"
                 className="absolute top-[30%] left-[50%] w-1/2 md:w-1/3 opacity-60 z-0 pointer-events-none"
                 animate={{
