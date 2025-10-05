@@ -9,10 +9,10 @@ export default function Home() {
 
                     <ul className="flex space-x-6 text-sm font-medium">
                         <li><Link to="/" className="hover:text-green-300 transition">Home</Link></li>
-                        <li><Link to="/#about" className="hover:text-green-300 transition">About</Link></li>
-                        <li><Link to="/#research" className="hover:text-green-300 transition">Research</Link></li>
+                        <li><Link to="/about" className="hover:text-green-300 transition">About</Link></li>
+                        <li><Link to="/research" className="hover:text-green-300 transition">Research</Link></li>
                         <li><Link to="/creative" className="hover:text-green-300 transition">Creative</Link></li>
-                        <li><Link to="/#contact" className="hover:text-green-300 transition">Contact</Link></li>
+                        <li><Link to="/contact" className="hover:text-green-300 transition">Contact</Link></li>
 
                     </ul>
                 </div>
