@@ -3,7 +3,7 @@
 export default function Hero() {
     return (
 
-        <main id="#hero" className="relative min-h-screen flex flex-col items-center w-full overflow-x-hidden  scroll-smooth">
+        <main id="hero" className="relative min-h-screen flex flex-col items-center w-full overflow-x-hidden  scroll-smooth">
             <section className="h-screen w-full flex flex-col justify-center items-center text-white text-center px-4">
                 <h1 className="text-5xl md:text-7xl font-bold text-gray-900">John Lee</h1>
                 {/* <HeroSlogan badText="Computational Creativity" goodText="Creative Computation"></HeroSlogan> */}

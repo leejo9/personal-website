@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Research() {
     return (
         <section
-            id="#research"
+            id="research"
             className="w-full px-6 flex justify-center overflow-hidden"
 
         >

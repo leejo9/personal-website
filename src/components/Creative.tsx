@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Creative() {
     return (
 
-        <main id="#creative" className="flex flex-col items-center w-full overflow-x-hidden">
+        <main id="creative" className="flex flex-col items-center w-full overflow-x-hidden">
             <Section title="Creative Work">
                 <div className="mt-4 space-y-4">
                     <p> <a className="text-indigo-400 hover:underline">Sketches & Digital Art</a></p>
