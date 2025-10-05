@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 
 type CardProps = {
     title: string;
@@ -29,13 +30,13 @@ export default function CreativePage() {
                 <div className="justify-end max-w-7xl mx-auto py-4 flex items-center text-white">
 
                     <ul className="flex space-x-6 text-sm font-medium">
-                        <li><a href="/" className="hover:text-green-300 transition">Return Home</a></li>
+                        <li><Link to="/" className="hover:text-green-300 transition">Return Home</Link></li>
 
                     </ul>
                 </div>
             </nav>
             <motion.img
-                src="/assets/cloud1.png"
+                src="   /assets/cloud1.png"
                 alt="A floating cloud"
                 className="absolute top-[10%] left-[-10%] w-1/2 md:w-1/3 opacity-70 z-0 pointer-events-none"
                 animate={{
@@ -45,7 +46,7 @@ export default function CreativePage() {
                 transition={{
                     duration: 150,
                     repeat: Infinity,
-                    ease: "easeOut",
+                    ease: "linear",
                 }}
             />
             <motion.img
@@ -59,7 +60,7 @@ export default function CreativePage() {
                 transition={{
                     duration: 150,
                     repeat: Infinity,
-                    ease: "easeOut",
+                    ease: "linear",
                 }}
             />
             <motion.img
@@ -76,7 +77,7 @@ export default function CreativePage() {
                     ease: "easeOut",
                 }}
             />
-    
+
 
 
             <section className="flex flex-col items-center justify-center text-center py-20 md:py-32 z-20">

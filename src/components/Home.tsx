@@ -8,13 +8,12 @@ export default function Home() {
                 <div className="justify-end max-w-7xl mx-auto py-4 flex items-center text-white">
 
                     <ul className="flex space-x-6 text-sm font-medium">
-                        <li><a href="#home" className="hover:text-green-300 transition">Home</a></li>
-                        <li><a href="#about" className="hover:text-green-300 transition">About</a></li>
-                        <li><a href="#research" className="hover:text-green-300 transition">Research</a></li>
-                        <li>
-                            <Link to="/Creative" className="hover:text-green-300 transition">Creative</Link>
-                        </li>
-                        <li><a href="#footer" className="hover:text-green-300 transition">Contact</a></li>
+                        <li><Link to="/" className="hover:text-green-300 transition">Home</Link></li>
+                        <li><Link to="/#about" className="hover:text-green-300 transition">About</Link></li>
+                        <li><Link to="/#research" className="hover:text-green-300 transition">Research</Link></li>
+                        <li><Link to="/creative" className="hover:text-green-300 transition">Creative</Link></li>
+                        <li><Link to="/#contact" className="hover:text-green-300 transition">Contact</Link></li>
+
                     </ul>
                 </div>
             </nav>
