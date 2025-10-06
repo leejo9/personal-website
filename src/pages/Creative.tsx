@@ -129,7 +129,7 @@ export default function CreativePage() {
                             <iframe className=" rounded-lg shadow-md w-full max-w-xl"
                                 width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/g_l2C9B9GNo&ab_channel=ACFNature?start=0&autoplay=0&mute=0&loop=0&playlist=g_l2C9B9GNo&ab_channel=ACFNature"
+                                src="https://www.youtube.com/embed/g_l2C9B9GNo?autoplay=0&mute=0&loop=0&cc_load_policy=1&playlist=g_l2C9B9GNo"
                                 title="AMV Preview"
                                 allow="autoplay; encrypted-media"
                                 allowFullScreen
