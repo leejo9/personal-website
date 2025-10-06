@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
 
+import cloud1 from "../assets/cloud1.png";
+import cloud2 from "../assets/cloud2.png";
+
 type CardProps = {
     title: string;
     children: React.ReactNode;
@@ -36,7 +39,7 @@ export default function CreativePage() {
                 </div>
             </nav>
             <motion.img
-                src="/assets/cloud1.png"
+                src={cloud1}
                 alt="A floating cloud"
                 className="absolute top-[10%] left-[-10%] w-1/2 md:w-1/3 opacity-70 z-0 pointer-events-none"
                 animate={{
@@ -50,7 +53,7 @@ export default function CreativePage() {
                 }}
             />
             <motion.img
-                src="/assets/cloud1.png"
+                src={cloud1}
                 alt="A floating cloud"
                 className="absolute top-[10%] left-[-10%] w-1/3 md:w-1/4 opacity-60 z-0 pointer-events-none"
                 animate={{
@@ -64,8 +67,8 @@ export default function CreativePage() {
                 }}
             />
             <motion.img
-                src="/assets/cloud2.png"
-                alt="Another floating cloud"
+                src={cloud2}
+                alt="another floating cloud"
                 className="absolute top-[30%] left-[50%] w-1/2 md:w-1/3 opacity-60 z-0 pointer-events-none"
                 animate={{
                     x: ["0%", "-145%"],
