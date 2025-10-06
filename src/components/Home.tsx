@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 export default function Home() {
     return (
 
-        <main id="#home" className="flex flex-col items-center w-full overflow-x-hidden">
+        <main id="home" className="flex flex-col items-center w-full overflow-x-hidden">
             <nav className="fixed top-0 left-0 w-full z-50 bg-black/66 backdrop-blur-md shadow-lg">
                 <div className="justify-end max-w-7xl mx-auto py-4 flex items-center text-white">
 

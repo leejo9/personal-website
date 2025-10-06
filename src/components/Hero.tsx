@@ -1,4 +1,5 @@
-// import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
@@ -11,11 +12,65 @@ export default function Hero() {
                 {/* <HeroSlogan badText="Hello " goodText="there"></HeroSlogan> */}
 
                 <p className="mt-2 py-4 text-md md:text-lg max-w-md text-gray-700">
-                    Aspiring developer and artist.
+                    Aspiring <TypingAnimation /> and artist.
                 </p>
             </section>
 
         </main>
+    );
+}
+
+function TypingAnimation() {
+    const roles = [
+        "software developer",
+        "researcher",
+        "applied scientist",
+    ];
+
+
+    const TYPING_SPEED = 100;
+    const DELETING_SPEED = 90;
+    const PAUSE_DURATION = 2000;
+
+    const [roleIndex, setRoleIndex] = useState(0);
+    const [displayedText, setDisplayedText] = useState("");
+    const [isDeleting, setIsDeleting] = useState(false);
+
+    useEffect(() => {
+        let timeout: NodeJS.Timeout;
+
+        if (!isDeleting) {
+            if (displayedText.length < roles[roleIndex].length) {
+                timeout = setTimeout(() => {
+                    setDisplayedText(roles[roleIndex].substring(0, displayedText.length + 1));
+                }, TYPING_SPEED);
+            } else {
+                timeout = setTimeout(() => setIsDeleting(true), PAUSE_DURATION);
+            }
+        }
+        else {
+            if (displayedText.length > 0) {
+                timeout = setTimeout(() => {
+                    setDisplayedText(displayedText.substring(0, displayedText.length - 1));
+                }, DELETING_SPEED);
+            } else {
+                setIsDeleting(false);
+                setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+            }
+        }
+
+        return () => clearTimeout(timeout);
+    }, [displayedText, isDeleting, roleIndex]);
+
+    return (
+        <span className="inline-flex items-center">
+            <span className="text-green-700">{displayedText}</span>
+            <motion.span
+                className="ml-1 h-5 w-[2px] bg-gray-700"
+                animate={{ opacity: [0, 1, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            />
+        </span>
     );
 }
 

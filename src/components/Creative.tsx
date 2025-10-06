@@ -22,7 +22,7 @@ export default function Creative() {
                         ></iframe>
                     </div>
                     <p className="py-3"> <Link to="/creative" className="text-gray-900 font-bold bg-green-200 opacity-85 rounded-lg px-5 py-2 hover:bg-green-600 hover:px-6 hover:py-3 hover:text-white hover:opacity-100">
-                        View my creative work!
+                        View more of my creative work!
                     </Link>
                     </p>
 

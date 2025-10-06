@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud2.png";
+import { HashLink } from 'react-router-hash-link';
 
 type CardProps = {
     title: string;
@@ -13,7 +14,7 @@ type CardProps = {
 function Card({ title, children }: CardProps) {
     return (
         <motion.div
-            className="p-6 rounded-2xl bg-white/30 backdrop-blur-md text-gray-900 shadow-lg border border-white/20"
+            className="p-6 rounded-2xl bg-white/30 backdrop-blur-md text-gray-900 shadow-lg border border-white/20 hover:-translate-y-[5px]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -71,11 +72,11 @@ export default function CreativePage() {
                 alt="another floating cloud"
                 className="absolute top-[30%] left-[50%] w-1/2 md:w-1/3 opacity-60 z-0 pointer-events-none"
                 animate={{
-                    x: ["0%", "-145%"],
+                    x: ["0%", "-200%"],
                     y: ["0%", "-8%", "0%"],
                 }}
                 transition={{
-                    duration: 190,
+                    duration: 160,
                     repeat: Infinity,
                     ease: "easeOut",
                 }}
@@ -110,9 +111,13 @@ export default function CreativePage() {
                     </Card>
                     <Card title="AMVs (Anime Music Videos)">
                         <p className="text-gray-700">Award-winning video editing projects ranging from poignant narratives to action-filled, cinematic edits</p>
-                        <a href="#amvSection" className="inline-block mt-3 px-4 py-2 font-bold text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition">
+                        <HashLink
+                            smooth
+                            to="#amvSection"
+                            className="inline-block mt-3 px-4 py-2 font-bold text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition"
+                        >
                             View Videos
-                        </a>
+                        </HashLink>
                     </Card>
                 </div>
             </section>

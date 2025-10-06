@@ -86,7 +86,7 @@ type CardProps = {
 function Card({ title, children }: CardProps) {
     return (
         <motion.div
-            className="p-6 rounded-2xl bg-gray-900 text-white shadow-lg hover:scale-[1.02] transition"
+            className="p-6 rounded-2xl bg-gray-900 text-white shadow-lg hover:scale-[1.02] transition hover:-translate-y-[5px] hover:bg-gray-700"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -94,6 +94,7 @@ function Card({ title, children }: CardProps) {
         >
             <h3 className="text-xl font-semibold">{title}</h3>
             <p className="mt-2 text-sm text-gray-300">{children}</p>
+            {/* <iframe src="https://itch.io/embed-upload/13287419?color=333333" allowfullscreen="" width="980" height="640"><a href="https://jlee9.itch.io/triangles">Play Triangles on itch.io</a></iframe> */}
         </motion.div>
     );
 }
