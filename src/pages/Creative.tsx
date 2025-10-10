@@ -34,7 +34,7 @@ export default function CreativePage() {
                 <div className="justify-end max-w-7xl mx-auto py-4 flex items-center text-white">
 
                     <ul className="flex space-x-6 text-sm font-medium">
-                        <li><Link to="/" className="hover:text-green-300 transition">Return Home</Link></li>
+                        <li><Link to="/" className="hover:text-green-200 transition hover:font-bold">Return Home</Link></li>
 
                     </ul>
                 </div>

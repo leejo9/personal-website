@@ -15,54 +15,79 @@ export default function Research() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     <div>I am grateful for the mentorship I have recieved from my professors and mentors.</div>
                     <Card title="Right Triangles on a Grid">
-                        <p>
-                            PI:
+
+                        <p>PI:{" "}
                             <a
                                 href="https://www.cs.hunter.cuny.edu/~saad/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-indigo-300 font-bold hover:underline"
-                            >
-                                {" "}
-                                Saad Mneimneh
+                                className="text-indigo-300 font-bold transition duration-300 group">
+                                <span className="relative inline-block">
+                                    Saad Mneimneh
+                                    <span className="absolute left-0 bottom-0 h-0.5 bg-indigo-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                                </span>
                             </a>
                         </p>
+
                         Explored applications of algorithms, time complexity, combinatorics, and other discrete math principles on a 3SUM-style problem.
-                        <p>Paper: <a className="hover:font-bold hover:text-yellow-400">In Progress...</a></p>
+                        <p>Paper:{" "}
+                            <a className="font-bold transition duration-300 group">
+                                <span className="relative inline-block">
+                                    In Progress...
+                                    <span className="absolute left-0 bottom-0 h-0.5 bg-red-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                                </span>
+                            </a>
+                        </p>
                     </Card>
 
                     <Card title="VR Avatar Realism Study">
-                        <p>
-                            PI:
+
+                        <p>PI:{" "}
                             <a
                                 href="https://wolex.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-indigo-300 font-bold hover:underline"
-                            >
-                                {" "}
-                                Oyewole Oyekoya
+                                className="text-indigo-300 font-bold transition duration-300 group">
+                                <span className="relative inline-block">
+                                    Oyewole Oyekoya
+                                    <span className="absolute left-0 bottom-0 h-0.5 bg-indigo-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                                </span>
                             </a>
                         </p>
+
                         Investigated perception of motion-captured look-alike avatars.
-                        <p>Paper: <a href="https://dl.acm.org/doi/10.1145/3681758.3697999" className="hover:font-bold hover:text-yellow-400" ><ins>ACM Siggraph Asia '24 Technical Communications</ins></a></p>
+                        <p>Paper:{" "}
+                            <a href="https://dl.acm.org/doi/10.1145/3681758.3697999" className="font-bold transition duration-300 group">
+                                <span className="relative inline-block">
+                                    ACM Siggraph Asia '24 Technical Communications
+                                    <span className="absolute left-0 bottom-0 h-0.5 bg-green-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                                </span>
+                            </a>
+                        </p>
 
                     </Card>
                     <Card title="DV-PredNet">
-                        <p>
-                            Mentor:
+                        <p>PI:{" "}
                             <a
                                 href="https://hzshan.github.io/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-indigo-300 font-bold hover:underline"
-                            >
-                                {" "}
-                                Haozhe Shan
+                                className="text-indigo-300 font-bold transition duration-300 group">
+                                <span className="relative inline-block">
+                                    Haozhe Shan
+                                    <span className="absolute left-0 bottom-0 h-0.5 bg-indigo-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                                </span>
                             </a>
                         </p>
                         Deep learning model for video next frame prediction inspired by PredNet and the human visual system.
-                        <p >Paper: <a className="hover:font-bold hover:text-yellow-400">Under Review...</a></p>
+
+                        <p>Paper:{" "}
+                            <a href="https://openreview.net/forum?id=qLlgRvcFan" className="font-bold transition duration-300 group">
+                                <span className="relative inline-block">
+                                    ICCV RIWM Workshop '25
+                                    <span className="absolute left-0 bottom-0 h-0.5 bg-green-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                                </span>
+                            </a></p>
                         {/* <div className="text-center mt-8">
                             <a className="px-4 py-2 font-bold text-white bg-gray-600 rounded-lg hover:bg-red-700 transition opacity-30">
                                 Abstract
@@ -86,7 +111,8 @@ type CardProps = {
 function Card({ title, children }: CardProps) {
     return (
         <motion.div
-            className="p-6 rounded-2xl bg-gray-900 text-white shadow-lg hover:scale-[1.02] transition hover:-translate-y-[5px] hover:bg-gray-700"
+            className="p-6 rounded-2xl bg-gray-900 text-white shadow-lg hover:scale-[1.02] hover:bg-gray-900"
+            // transition hover:-translate-y-[5px] 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

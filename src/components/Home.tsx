@@ -9,11 +9,11 @@ export default function Home() {
                 <div className="justify-end max-w-7xl mx-auto py-4 flex items-center text-white">
 
                     <ul className="flex space-x-6 text-sm font-medium">
-                        <li><HashLink smooth to="/" className="hover:text-green-300 transition">Home</HashLink></li>
+                        <li><HashLink smooth to="/" className="hover:text-green-200 transition">Home</HashLink></li>
                         <li><HashLink smooth to="/#about" className="hover:text-green-300 transition">About</HashLink></li>
-                        <li><HashLink smooth to="/#research" className="hover:text-green-300 transition">Research</HashLink></li>
-                        <li><Link to="/creative" className="hover:text-green-300 transition">Creative</Link></li>
-                        <li><HashLink smooth to="/#footer" className="hover:text-green-300 transition">Contact</HashLink></li>
+                        <li><HashLink smooth to="/#research" className="hover:text-green-400 transition">Research</HashLink></li>
+                        <li><Link to="/creative" className="hover:text-green-500 transition">Creative</Link></li>
+                        <li><HashLink smooth to="/#footer" className="hover:text-green-600 transition">Contact</HashLink></li>
 
                     </ul>
                 </div>

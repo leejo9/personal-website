@@ -7,9 +7,18 @@ export default function Creative() {
         <main id="creative" className="flex flex-col items-center w-full overflow-x-hidden">
             <Section title="Creative Work">
                 <div className="mt-4 space-y-4">
-                    <p> <a className="text-indigo-400 hover:underline">Sketches & Digital Art</a></p>
-                    <p> <a className="text-indigo-400 hover:underline">Fantasy Stories & Worldbuilding</a></p>
-                    <p>  <Link to="/creative#amvSection" className="text-indigo-400 hover:underline">Award-winning AMVs</Link></p>
+                    <p> <a className="text-indigo-400">Sketches & Art</a></p>
+                    <p> <a className="text-indigo-400">Fantasy Stories & Worldbuilding</a></p>
+                    <p>
+                        <Link to="/creative#amvSection" className="group text-indigo-400">
+                            <span className="relative inline-block">
+                                Award-winning AMVs
+                                <span className="absolute left-0 bottom-0 h-0.5 bg-indigo-300 w-0 group-hover:w-full transition-all duration-500"></span>
+                            </span>
+                        </Link>
+                    </p>
+
+
 
                     <div className="w-full flex justify-center">
                         <iframe className=" rounded-lg shadow-md w-full max-w-xl"
