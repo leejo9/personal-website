@@ -6,7 +6,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 export default function Model(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>(null)
 
-  const { scene, animations } = useGLTF('/assets/Dragon.glb')
+  const { scene, animations } = useGLTF('../assets/Dragon.glb')
 
   const { actions } = useAnimations(animations, group)
 
@@ -21,4 +21,4 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   return <primitive ref={group} object={scene} {...props} />
 }
 
-useGLTF.preload('/assets/Dragon.glb')
+useGLTF.preload('../assets/Dragon.glb')

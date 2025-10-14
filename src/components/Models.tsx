@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import ModelViewer from "../components/ModelViewer.tsx";
-import Crab from "../components/Crab.tsx";
-import Dragon from "../components/Dragon.tsx";
+import React, { Suspense } from "react";
+
+const Crab = React.lazy(() => import("../components/Crab.tsx"));
+const Dragon = React.lazy(() => import("../components/Dragon.tsx"));
 
 export default function ModelsSection() {
     return (
@@ -31,21 +33,26 @@ export default function ModelsSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.2 }}
                     >
-                        <div className="max-w-2xl and mx-auto h-80 bg-black/20 rounded-lg shadow-xl mb-12">
-                            <ModelViewer cameraPosition={[4, 2, -8]}>
-                                <Crab scale={4.8} />
-                            </ModelViewer>
+                        <div className="max-w-xl mx-auto h-80 bg-black/20 rounded-lg shadow-xl mb-12">
+                            <Suspense fallback={<div className="flex justify-center items-center h-full">Loading model...</div>}>
+                                <ModelViewer cameraPosition={[4, 2, -8]}>
+                                    <Crab scale={4.8} />
+                                </ModelViewer>
+                            </Suspense>
                         </div>
                         <p className="text-center text-gray-700 mt-4">
                         </p>
                     </motion.div>
 
-                    <motion.div /* ... */ >
-                        <div className=" max-w-2xl and mx-auto h-100 w-full bg-black/20 rounded-lg shadow-xl">
-                            <ModelViewer cameraPosition={[-8, 11, -6]} target={[0, 8, 0]}>
-                                <Dragon scale={1.3} />
-                            </ModelViewer>
+                    <motion.div >
+                        <div className="max-w-xl mx-auto h-100 bg-black/20 rounded-lg shadow-xl">
+                            <Suspense fallback={<div className="flex justify-center items-center h-full">Loading model...</div>}>
+                                <ModelViewer cameraPosition={[-8, 11, -6]} target={[0, 8, 0]}>
+                                    <Dragon scale={1.3} />
+                                </ModelViewer>
+                            </Suspense>
                         </div>
+
                     </motion.div>
 
                 </div>
