@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 const Crab = React.lazy(() => import("../components/Crab.tsx"));
 const Dragon = React.lazy(() => import("../components/Dragon.tsx"));
 
-export default function ModelsSection() {
+export default function Models() {
     return (
         <section id="models" className="w-full px-6 flex justify-center py-20">
             <div className="w-full max-w-5xl">
@@ -33,7 +33,7 @@ export default function ModelsSection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.2 }}
                     >
-                        <div className="max-w-xl mx-auto h-80 bg-black/20 rounded-lg shadow-xl mb-12">
+                        <div className="max-w-2xl mx-auto h-80 bg-black/20 rounded-lg shadow-xl mb-12">
                             <Suspense fallback={<div className="flex justify-center items-center h-full">Loading model...</div>}>
                                 <ModelViewer cameraPosition={[4, 2, -8]}>
                                     <Crab scale={4.8} />
@@ -45,7 +45,7 @@ export default function ModelsSection() {
                     </motion.div>
 
                     <motion.div >
-                        <div className="max-w-xl mx-auto h-100 bg-black/20 rounded-lg shadow-xl">
+                        <div className="max-w-2xl mx-auto h-100 bg-black/20 rounded-lg shadow-xl">
                             <Suspense fallback={<div className="flex justify-center items-center h-full">Loading model...</div>}>
                                 <ModelViewer cameraPosition={[-8, 11, -6]} target={[0, 8, 0]}>
                                     <Dragon scale={1.3} />
