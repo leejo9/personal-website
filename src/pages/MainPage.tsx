@@ -4,6 +4,7 @@ import About from '../components/About';
 import Research from '../components/Research';
 import Creative from '../components/Creative';
 import Footer from '../components/Footer';
+import ModelsSection from '../components/Models';
 
 export default function MainPage() {
     return (
@@ -13,7 +14,10 @@ export default function MainPage() {
             <About />
             <Research />
             <Creative />
+            <ModelsSection />
+
             <Footer />
+
         </main>
 
 

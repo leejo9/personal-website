@@ -25,7 +25,7 @@ export default function About() {
                 <div className="w-full flex justify-center py-6">
                     <p className="text-lg text-black max-w-xl leading-relaxed">
 
-                        Outside of computer science, I really enjoy all types of artistic hobbies, from drawing to writing to editing to playing instruments (guitar, clarinet). I also like going on walks at night and enjoying nature.
+                        Outside of computer science, I really enjoy all types of artistic hobbies, from drawing to writing and editing to playing instruments (guitar, clarinet). I also like going on walks at night and enjoying nature.
 
                     </p>
 

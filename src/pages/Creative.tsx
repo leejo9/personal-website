@@ -102,7 +102,9 @@ export default function CreativePage() {
                         <a className="inline-block mt-3 px-4 py-2 font-bold text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition">
                             In Progress
                         </a>
+
                     </Card>
+
                     <Card title="Writing & Worldbuilding">
                         <p className="text-transparent text-base bg-clip-text font-bold bg-gradient-to-r from-green-700 to-sky-5=800/10">To a world beyond, with wonders of magic and nature... </p>
                         <a className="inline-block mt-3 px-4 py-2 font-bold text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition">

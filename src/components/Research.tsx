@@ -13,7 +13,7 @@ export default function Research() {
 
                 </div> */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                    <div>I am grateful for the mentorship I have recieved from my professors and mentors.</div>
+                    <div>I am grateful for the guidance I have recieved from my professors and mentors.</div>
                     <Card title="Right Triangles on a Grid">
 
                         <p>PI:{" "}
@@ -67,7 +67,7 @@ export default function Research() {
 
                     </Card>
                     <Card title="DV-PredNet">
-                        <p>PI:{" "}
+                        <p>Mentor:{" "}
                             <a
                                 href="https://hzshan.github.io/"
                                 target="_blank"

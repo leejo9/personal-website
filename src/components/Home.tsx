@@ -13,10 +13,15 @@ export default function Home() {
                         <li><HashLink smooth to="/#about" className="hover:text-green-300 transition">About</HashLink></li>
                         <li><HashLink smooth to="/#research" className="hover:text-green-400 transition">Research</HashLink></li>
                         <li><Link to="/creative" className="hover:text-green-500 transition">Creative</Link></li>
+                        <li><HashLink smooth to="/#models" className="hover:text-green-400 transition">Models</HashLink></li>
+
                         <li><HashLink smooth to="/#footer" className="hover:text-green-600 transition">Contact</HashLink></li>
 
+
                     </ul>
+
                 </div>
+
             </nav>
 
 
