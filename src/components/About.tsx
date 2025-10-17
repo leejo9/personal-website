@@ -12,7 +12,7 @@ export default function About() {
                 <div className="w-full flex justify-center">
                     <p className="text-lg text-black max-w-xl leading-relaxed">
                         I’m currently researching <span className=""> computer vision </span>
-                        and its applications in visual mediums. I am interested in both applied and foundational research, as well as software engineering roles. I hope to put my creativity to good use :). I also hope to eventually branch into developing immersive worlds (
+                        and its applications. My interests encompass applied and foundational research, as well as software engineering. I hope to put my creativity to good use. I also hope to eventually be involved in  immersive worlds (
                         <span className="relative group text-green-700 cursor-help">
                             game development
                             <span className="hidden group-hover:inline-block absolute left-0 bottom-full mt-2 text-sm px-3 py-1 rounded z-10 whitespace-normal bg-transparent bg-opacity-0">

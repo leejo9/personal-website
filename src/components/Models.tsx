@@ -10,7 +10,7 @@ export default function Models() {
         <section id="models" className="w-full px-6 flex justify-center py-20">
             <div className="w-full max-w-5xl">
                 <motion.h2
-                    className="text-3xl font-bold mb-2 text-center text-indigo-800"
+                    className="text-3xl font-bold mb-2 text-center text-indigo-300"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
