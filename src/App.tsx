@@ -1,19 +1,19 @@
-
-import CreativePage from './pages/Creative';
-import MainPage from './pages/MainPage';
+// src/App.tsx
+import { Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./components/Home";
+import ScrollToTop from "./components/pagetopfix";
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
 
-
-function App() {
+export default function App() {
   return (
-    <div>
+    <>
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/creative" element={<CreativePage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
       </Routes>
-    </div>
+    </>
   );
 }
-
-export default App
