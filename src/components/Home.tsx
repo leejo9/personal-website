@@ -258,7 +258,7 @@ function ResearchContent() {
                             paper.
                         </a> {" "}
                         <a
-                            href="src/assets/prednet_poster.pdf"
+                            href="prednet_poster.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-700 dark:text-green-400 text-sm italic hover:underline"
@@ -313,7 +313,7 @@ function ResearchContent() {
                             paper.
                         </a>{" "}
                         <a
-                            href="src/assets/triangle_poster.pdf"
+                            href="/triangle_poster.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-700 dark:text-green-400 text-sm italic hover:underline"
