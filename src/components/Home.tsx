@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud2.png";
 import ThemeToggle from "../components/ToggleTheme";
+import prednetPoster from "../assets/prednet_poster.pdf";
+import trianglePoster from "../assets/triangle_poster.pdf";
 
 // model stuff
 import React, { Suspense } from "react";
@@ -258,7 +260,7 @@ function ResearchContent() {
                             paper.
                         </a> {" "}
                         <a
-                            href="prednet_poster.pdf"
+                            href={prednetPoster}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-700 dark:text-green-400 text-sm italic hover:underline"
@@ -305,7 +307,7 @@ function ResearchContent() {
 
                         <em>JCDCG^3 2026</em>. <br />
                         <a
-                            href="https://www.overleaf.com/project/65cba1154041ca18aa1e158c"
+                            href="https://www.overleaf.com/read/hnkwybgxmggw#ddb913"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-700 dark:text-green-400 text-sm italic hover:underline"
@@ -313,7 +315,7 @@ function ResearchContent() {
                             paper.
                         </a>{" "}
                         <a
-                            href="/triangle_poster.pdf"
+                            href={trianglePoster}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-green-700 dark:text-green-400 text-sm italic hover:underline"
