@@ -421,7 +421,7 @@ function ExperienceContent() {
                         Google
                     </p>
                     <p className="text-sm text-gray-600 dark:text-gray-300 font-medium italic ">
-                        team matching 🙏
+                        
                     </p>
                     {/* <p className="text-sm text-gray-600 dark:text-gray-400">
                         description here
